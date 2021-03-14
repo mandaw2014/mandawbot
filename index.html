@@ -1,191 +1,57 @@
-const about = document.getElementById("about");
-const home = document.getElementById("home");
-const download = document.getElementById("download");
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandaw</title>
+    <link rel="stylesheet" href="./style.css">
 
-about.addEventListener("click", function() {
-    window.scrollTo(0, document.body.scrollHeight - 4400);
-});
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="nav">
+        <img src="./m.png" id="watermark">
 
-home.addEventListener("click", function() {
-    window.scrollTo(0, document.body.scrollHeight - 10000000);
-});
+        <h3 id="home">Home</h3>
+        <h3 id="about">About</h3>
+    </nav>
 
-download.addEventListener("click", function() {
-    window.scrollTo(0, document.body.scrollHeight - 2500);
-});
+    <h1 id="meet">Meet Mandaw.</h1>
+    <h2 id="meet1">The Notification Assistant.</h2>
+    <button id="download">Download</button>
 
-function inViewport(element){
-    const bb = element.getBoundingClientRect(); 
-    return !(bb.top > innerHeight || bb.bottom < 0);  
-}
-  
-const logo = document.getElementById("logo");
-const things = document.getElementById("things");
-const morningimg = document.getElementById("morningimg");
-const morning = document.getElementById("morning");
-const morningp = document.getElementById("morningp");
-const weatherimg = document.getElementById("weatherimg");
-const weather = document.getElementById("weather");
-const weatherp = document.getElementById("weatherp");
-const timeimg = document.getElementById("timeimg");
-const time = document.getElementById("time");
-const timep = document.getElementById("timep");
-const jokeimg = document.getElementById("jokeimg");
-const joke = document.getElementById("joke");
-const jokep = document.getElementById("jokep");
-const work = document.getElementById("work");
-const workp = document.getElementById("workp");
-const downloadh = document.getElementById("dowload");
-const downloadp = document.getElementById("downloadp");
-const python = document.getElementById("python");
-const rar = document.getElementById("rar");
-const shortcut = document.getElementById("shortcut");
-const run = document.getElementById("run");
-const copy = document.getElementById("copy");
-const paste = document.getElementById("paste");
+    <img src="./Mandaw Logo.png" id="logo">
 
-document.addEventListener("scroll", event => {
-    if(inViewport(logo)) {
-        logo.classList.add("fadein");
-    } else {
-        logo.classList.remove("fadein");
-    }
+    <h1 id="things">What Can Mandaw Do:</h1>
 
-    if(inViewport(things)) {
-        things.classList.add("fadein");
-    } else {
-        things.classList.remove("fadein");
-    }
+    <img src="./MandawScreenshots/good_morning.png" id="morningimg">
+    <h2 id="morning">Greetings</h2>
+    <h3 id="morningp">He greets you good morning every time <br> you start your device.</h3>
 
-    if(inViewport(morningimg)) {
-        morningimg.classList.add("fadein");
-    } else {
-        morningimg.classList.remove("fadein");
-    }
+    <img src="./MandawScreenshots/weather.png" id="weatherimg">
+    <h2 id="weather">Weather</h2>
+    <h3 id="weatherp">He tells you the weather in the city that you live in.</h3>
 
-    if(inViewport(morning)) {
-        morning.classList.add("fadein");
-    } else {
-        morning.classList.remove("fadein");
-    }
+    <img src="./MandawScreenshots/time.png" id="timeimg">
+    <h2 id="time">Time</h2>
+    <h3 id="timep">He tells you the time.</h3>
 
-    if(inViewport(morningp)) {
-        morningp.classList.add("fadein");
-    } else {
-        morningp.classList.remove("fadein");
-    }
+    <img src="./MandawScreenshots/joke.png" id="jokeimg">
+    <h2 id="joke">Joke</h2>
+    <h3 id="jokep">He tells you jokes.</h3>
 
-    if(inViewport(weatherimg)) {
-        weatherimg.classList.add("fadein");
-    } else {
-        weatherimg.classList.remove("fadein");
-    }
+    <h1 id="work">How Does Mandaw Work:</h1>
+    <h3 id="workp">Mandaw is made with Python, a popular programming language for Artificial Inteligiance. <br> The project is currently in its alpha stage so Mandaw will be having a ton more updates later down the road. <br><br> Mandaw is made with a library for Python called Plyer. Plyer is used to send notifications to the computer. <br> Everytime you start up your device, Mandaw will greet you with the weather, time and a joke. <br> The weather gets its data from Google's official weather API. Mandaw locates the city you are in <br> and then searches Google for the weather and time in that city. <br><br> No information will be stolen when using Mandaw. <br><br><br><br><br><br>
+    </h3>
 
-    if(inViewport(weather)) {
-        weather.classList.add("fadein");
-    } else {
-        weather.classList.remove("fadein");
-    }
+    <h1 id="dowload">Download Steps:</h1>
+    <h3 id="downloadp">1: Download Python. <img src="./MandawScreenshots/python.png" id="python"><br><br> Unfortunately I havent figured out a way of downloading Mandaw without Python installed. <br> You can download Python here: <a href="https://www.python.org/">here</a> <br><br> Hover over downloads and download the latest version. <br><br> 2: Download the Mandaw zip. <br><br>Download the zip: <a href="./M.A.N.D.A.W.rar" download="">here</a> <br> Then extract it onto your desktop by pressing the Extract To button. <img src="./MandawScreenshots/rar.png" id="rar"><br><br> 3: Go into the unzipped folder and Right Click the main.py file. <br> Then click Create Shortcut<br><img src="./MandawScreenshots/shortcut.png" id="shortcut"><br>4: On Windows, press the Windows Key + R and paste in this: <br>  AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\ <br>And press enter.<br><img src="./MandawScreenshots/windows.png" id="run"><br> 5: Copy the main.py shortcut and paste it into the Startup folder. <br><img src="./MandawScreenshots/copy.png" id="copy"> <img src="./MandawScreenshots/paste.png" id="paste"><br><br> Now everytime you boot up your computer, Mandaw will run. <br><br> Note: Mandaw currently not available for Mac or Linux. <br><br><br></h3>
 
-    if(inViewport(weatherp)) {
-        weatherp.classList.add("fadein");
-    } else {
-        weatherp.classList.remove("fadein");
-    }
+    <p>Mandaw © 2021 <br><br><br></p>
 
-    if(inViewport(timeimg)) {
-        timeimg.classList.add("fadein");
-    } else {
-        timeimg.classList.remove("fadein");
-    }
-
-    if(inViewport(time)) {
-        time.classList.add("fadein");
-    } else {
-        time.classList.remove("fadein");
-    }
-
-    if(inViewport(timep)) {
-        timep.classList.add("fadein");
-    } else {
-        timep.classList.remove("fadein");
-    }
-
-    if(inViewport(jokeimg)) {
-        jokeimg.classList.add("fadein");
-    } else {
-        jokeimg.classList.remove("fadein");
-    }
-
-    if(inViewport(joke)) {
-        joke.classList.add("fadein");
-    } else {
-        joke.classList.remove("fadein");
-    }
-
-    if(inViewport(jokep)) {
-        jokep.classList.add("fadein");
-    } else {
-        jokep.classList.remove("fadein");
-    }
-
-    if(inViewport(work)) {
-        work.classList.add("fadein");
-    } else {
-        work.classList.remove("fadein");
-    }
-
-    if(inViewport(workp)) {
-        workp.classList.add("fadein");
-    } else {
-        workp.classList.remove("fadein");
-    }
-
-    if(inViewport(downloadh)) {
-        downloadh.classList.add("fadein");
-    } else {
-        downloadh.classList.remove("fadein");
-    }
-
-    if(inViewport(downloadp)) {
-        downloadp.classList.add("fadein");
-    } else {
-        downloadp.classList.remove("fadein");
-    }
-
-    if(inViewport(python)) {
-        python.classList.add("fadein");
-    } else {
-        python.classList.remove("fadein");
-    }
-
-    if(inViewport(rar)) {
-        rar.classList.add("fadein");
-    } else {
-        rar.classList.remove("fadein");
-    }
-
-    if(inViewport(shortcut)) {
-        shortcut.classList.add("fadein");
-    } else {
-        shortcut.classList.remove("fadein");
-    }
-
-    if(inViewport(run)) {
-        run.classList.add("fadein");
-    } else {
-        run.classList.remove("fadein");
-    }
-
-    if(inViewport(copy)) {
-        copy.classList.add("fadein");
-    } else {
-        copy.classList.remove("fadein");
-    }
-
-    if(inViewport(paste)) {
-        paste.classList.add("fadein");
-    } else {
-        paste.classList.remove("fadein");
-    }
-});
+</body>
+<script src="./script.js"></script>
+</html>

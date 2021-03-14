@@ -31,16 +31,18 @@
 
 #home {
     color: rgb(187, 187, 187);
-    position: absolute;
-    left: 1140px;
+    text-align: center;
+    position: relative;
+    left: 450px;
     top: -5px;
 }
 
 #about {
     color: rgb(187, 187, 187);
-    position: absolute;
-    left: 1240px;
-    top: -5px;
+    text-align: center;
+    position: relative;
+    left: 550px;
+    top: -45px;
 }
 
 #watermark {
@@ -303,5 +305,19 @@ p {
 }
 
 @media only screen and (max-width: 600px) {
-    
+    #home {
+        text-align: left;
+        position: relative;
+        left: 310px;
+    }
+
+    #about {
+        text-align: left;
+        position: relative;
+        left: 400px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
 }

@@ -1,0 +1,289 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.fadein {
+    display: block;
+    opacity: 0.0;
+    animation: fadeIn ease 10s;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    30% {opacity:1;}
+    100% {opacity:1;}
+}
+
+#nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#home {
+    color: rgb(187, 187, 187);
+    position: absolute;
+    left: 1140px;
+    top: -5px;
+}
+
+#about {
+    color: rgb(187, 187, 187);
+    position: absolute;
+    left: 1240px;
+    top: -5px;
+}
+
+#watermark {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: -10px;
+    top: -1px;
+}
+
+#meet {
+    font-size: 60px;
+    text-align: center;
+}
+
+#meet1 {
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+    top: -30px;
+}
+
+button {
+    background-color: rgb(9, 206, 255);
+    color: white;
+    font-size: 26px;
+    text-decoration: none;
+    border-radius: 30px 30px 30px 30px;
+    width: 200px;
+    height: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 300px;
+    opacity: 0;
+}
+
+#things {
+    font-size: 53px;
+    position: relative;
+    top: 400px;
+    text-align: center;
+    opacity: 0;
+}
+
+#morningimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 500px;
+    opacity: 0;
+}
+
+#morning {
+    position: relative;
+    top: 500px;
+    text-align: center;
+    opacity: 0;
+}
+
+#morningp {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 500px;
+    text-align: center;
+    opacity: 0;
+}
+
+#weatherimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 600px;
+    opacity: 0;
+}
+
+#weather {
+    position: relative;
+    top: 600px;
+    text-align: center;
+    opacity: 0;
+}
+
+#weatherp {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 600px;
+    text-align: center;
+    opacity: 0;
+}
+
+#timeimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 700px;
+    opacity: 0;
+}
+
+#time {
+    position: relative;
+    top: 700px;
+    text-align: center;
+    opacity: 0;
+}
+
+#timep {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 700px;
+    text-align: center;
+    opacity: 0;
+}
+
+#jokeimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 800px;
+    opacity: 0;
+}
+
+#joke {
+    position: relative;
+    top: 800px;
+    text-align: center;
+    opacity: 0;
+}
+
+#jokep {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 800px;
+    text-align: center;
+    opacity: 0;
+}
+
+#work {
+    font-size: 50px;
+    position: relative;
+    top: 900px;
+    text-align: center;
+    opacity: 0;
+}
+
+#workp {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 950px;
+    text-align: center;
+    opacity: 0;
+}
+
+#dowload {
+    font-size: 50px;
+    position: relative;
+    top: 1000px;
+    text-align: center;
+    opacity: 0;
+}
+
+#downloadp {
+    position: relative;
+    top: 1000px;
+    text-align: center;
+    opacity: 0;
+}
+
+#python {
+    width: 800px;
+    height: 300px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 10px;
+    opacity: 0;
+}
+
+#rar {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 10px;
+    opacity: 0;
+}
+
+#shortcut {
+    width: 700px;
+    height: 400px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 10px;
+    opacity: 0;
+}
+
+#run {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 10px;
+    opacity: 0;
+}
+
+#copy {
+    width: 700px;
+    height: 400px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 10px;
+    opacity: 0;
+}
+
+#paste {
+    width: 700px;
+    height: 400px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 10px;
+    opacity: 0;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(185, 185, 185);
+    text-align: center;
+    position: relative;
+    top: 1000px;
+}

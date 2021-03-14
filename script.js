@@ -14,6 +14,11 @@ download.addEventListener("click", function() {
     window.scrollTo(0, document.body.scrollHeight - 2500);
 });
 
+function inViewport(element){
+    const bb = element.getBoundingClientRect(); 
+    return !(bb.top > innerHeight || bb.bottom < 0);  
+}
+  
 const logo = document.getElementById("logo");
 const things = document.getElementById("things");
 const morningimg = document.getElementById("morningimg");
@@ -39,163 +44,148 @@ const run = document.getElementById("run");
 const copy = document.getElementById("copy");
 const paste = document.getElementById("paste");
 
-document.addEventListener("scroll", function() {
-    if(window.pageYOffset >= 100) {
+document.addEventListener("scroll", event => {
+    if(inViewport(logo)) {
         logo.classList.add("fadein");
+    } else {
+        logo.classList.remove("fadein");
     }
-});
 
-document.addEventListener("scroll", function() {
-    if(window.pageYOffset >= 500) {
+    if(inViewport(things)) {
         things.classList.add("fadein");
+    } else {
+        things.classList.remove("fadein");
     }
-});
 
-document.addEventListener("scroll", function() {
-    if(window.pageYOffset >= 600) {
+    if(inViewport(morningimg)) {
         morningimg.classList.add("fadein");
+    } else {
+        morningimg.classList.remove("fadein");
     }
-});
 
-document.addEventListener("scroll", function() {
-    if(window.pageYOffset >= 700) {
+    if(inViewport(morning)) {
         morning.classList.add("fadein");
-        morningp.classList.add("fadein");
+    } else {
+        morning.classList.remove("fadein");
     }
-});
 
-document.addEventListener("scroll", function() {
-    if(window.pageYOffset >= 800) {
+    if(inViewport(morningp)) {
         morningp.classList.add("fadein");
+    } else {
+        morningp.classList.remove("fadein");
     }
-});
 
-document.addEventListener("scroll", function() {
-    if(window.pageYOffset >= 900) {
+    if(inViewport(weatherimg)) {
         weatherimg.classList.add("fadein");
+    } else {
+        weatherimg.classList.remove("fadein");
     }
-});
 
-document.addEventListener("scroll", function() {
-    if(window.pageYOffset >= 1000) {
+    if(inViewport(weather)) {
         weather.classList.add("fadein");
+    } else {
+        weather.classList.remove("fadein");
     }
-});
 
-document.addEventListener("scroll", function() {
-    if(window.pageYOffset >= 1100) {
+    if(inViewport(weatherp)) {
         weatherp.classList.add("fadein");
+    } else {
+        weatherp.classList.remove("fadein");
     }
-});
 
-document.addEventListener("scroll", function() {
-    if(window.pageYOffset >= 1100) {
-        weatherp.classList.add("fadein");
-    }
-});
-
-document.addEventListener("scroll", function() {
-    if(window.pageYOffset >= 1200) {
+    if(inViewport(timeimg)) {
         timeimg.classList.add("fadein");
+    } else {
+        timeimg.classList.remove("fadein");
     }
-});
 
-document.addEventListener("scroll", function() {
-    if(window.pageYOffset >= 1300) {
+    if(inViewport(time)) {
         time.classList.add("fadein");
+    } else {
+        time.classList.remove("fadein");
     }
-});
 
-document.addEventListener("scroll", function() {
-    if(window.pageYOffset >= 1400) {
+    if(inViewport(timep)) {
         timep.classList.add("fadein");
+    } else {
+        timep.classList.remove("fadein");
     }
-});
 
-document.addEventListener("scroll", function() {
-    if(window.pageYOffset >= 1500) {
+    if(inViewport(jokeimg)) {
         jokeimg.classList.add("fadein");
+    } else {
+        jokeimg.classList.remove("fadein");
     }
-});
 
-document.addEventListener("scroll", function() {
-    if(window.pageYOffset >= 1600) {
+    if(inViewport(joke)) {
         joke.classList.add("fadein");
+    } else {
+        joke.classList.remove("fadein");
     }
-});
 
-document.addEventListener("scroll", function() {
-    if(window.pageYOffset >= 1700) {
+    if(inViewport(jokep)) {
         jokep.classList.add("fadein");
+    } else {
+        jokep.classList.remove("fadein");
     }
-});
 
-document.addEventListener("scroll", function() {
-    if(window.pageYOffset >= 1800) {
+    if(inViewport(work)) {
         work.classList.add("fadein");
+    } else {
+        work.classList.remove("fadein");
     }
-});
 
-document.addEventListener("scroll", function() {
-    if(window.pageYOffset >= 1800) {
+    if(inViewport(workp)) {
         workp.classList.add("fadein");
+    } else {
+        workp.classList.remove("fadein");
     }
-});
 
-document.addEventListener("scroll", function() {
-    if(window.pageYOffset >= 1900) {
+    if(inViewport(downloadh)) {
         downloadh.classList.add("fadein");
+    } else {
+        downloadh.classList.remove("fadein");
     }
-});
 
-document.addEventListener("scroll", function() {
-    if(window.pageYOffset >= 1900) {
+    if(inViewport(downloadp)) {
         downloadp.classList.add("fadein");
+    } else {
+        downloadp.classList.remove("fadein");
     }
-});
 
-
-document.addEventListener("scroll", function() {
-    if(window.pageYOffset >= 2000) {
+    if(inViewport(python)) {
         python.classList.add("fadein");
+    } else {
+        python.classList.remove("fadein");
     }
-});
 
-
-document.addEventListener("scroll", function() {
-    if(window.pageYOffset >= 3000) {
+    if(inViewport(rar)) {
         rar.classList.add("fadein");
+    } else {
+        rar.classList.remove("fadein");
     }
-});
 
-
-document.addEventListener("scroll", function() {
-    if(window.pageYOffset >= 3500) {
+    if(inViewport(shortcut)) {
         shortcut.classList.add("fadein");
+    } else {
+        shortcut.classList.remove("fadein");
     }
-});
 
-
-document.addEventListener("scroll", function() {
-    if(window.pageYOffset >= 4000) {
+    if(inViewport(run)) {
         run.classList.add("fadein");
+    } else {
+        run.classList.remove("fadein");
     }
-});
 
-
-document.addEventListener("scroll", function() {
-    if(window.pageYOffset >= 4500) {
+    if(inViewport(copy)) {
         copy.classList.add("fadein");
+    } else {
+        copy.classList.remove("fadein");
     }
-});
 
-
-document.addEventListener("scroll", function() {
-    if(window.pageYOffset >= 4700) {
+    if(inViewport(paste)) {
         paste.classList.add("fadein");
+    } else {
+        paste.classList.remove("fadein");
     }
-});
-
-document.addEventListener("scroll", function() {
-    console.log('Current scroll from the top: ' + window.pageYOffset)
 });

@@ -37,8 +37,8 @@ const work = document.getElementById("work");
 const workp = document.getElementById("workp");
 const downloadh = document.getElementById("dowload");
 const downloadp = document.getElementById("downloadp");
-const python = document.getElementById("python");
 const rar = document.getElementById("rar");
+const extract = document.getElementById("extract");
 const shortcut = document.getElementById("shortcut");
 const run = document.getElementById("run");
 const copy = document.getElementById("copy");
@@ -153,16 +153,16 @@ document.addEventListener("scroll", event => {
         downloadp.classList.remove("fadein");
     }
 
-    if(inViewport(python)) {
-        python.classList.add("fadein");
-    } else {
-        python.classList.remove("fadein");
-    }
-
     if(inViewport(rar)) {
         rar.classList.add("fadein");
     } else {
         rar.classList.remove("fadein");
+    }
+
+    if(inViewport(extract)) {
+        extract.classList.add("fadein");
+    } else {
+        extract.classList.remove("fadein");
     }
 
     if(inViewport(shortcut)) {
